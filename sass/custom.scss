@@ -114,6 +114,18 @@ $card-border-width: 0;
 
 
 
+// FAQS
+
+.accordion-button.custom-color:hover,
+.accordion-button.custom-color:not(.collapsed) { color: $secondary; }
+$accordion-color:                         $black;
+$accordion-bg:                            transparent;
+$accordion-button-active-bg:              white;
+$accordion-button-focus-box-shadow:       white;
+$accordion-icon-active-color:             $secondary;
+
+
+
 // MOCKUP GUIDES
 
 body:before { display: none; }
