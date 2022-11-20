@@ -162,6 +162,48 @@ footer a.nav-link { color: white; }
 
 
 
+// BUTTONS AND HOVERS
+
+.navbar button.btn.btn-danger:hover {
+	background-color: transparent;
+	color: $secondary;
+	border: 2px solid $secondary;
+}
+
+$navbar-light-hover-color: $secondary;
+
+.container.fold button.btn-primary:hover {
+	background-color: transparent;
+	color: $primary;
+	border: 2px solid $new_darkblue;
+}
+
+.container.fold button.btn-light:hover {
+	background-color: transparent;
+	color: #333;
+	border: 2px solid $black;
+}
+
+.custom-pills button.nav-link:hover {
+	color: $secondary;
+}
+
+$nav-link-hover-color: $secondary;
+
+.card a.btn-primary.custom:hover {
+	background-color: transparent;
+	color: $primary;
+	border: 2px solid $primary;
+}
+
+.prefooter form button.btn-secondary:hover {
+	background-color: white;
+	color: $secondary !important;
+	border: 2px solid $secondary;
+}
+
+
+
 // MOCKUP GUIDES
 
 body:before { display: none; }

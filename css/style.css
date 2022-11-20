@@ -123,6 +123,40 @@ footer a.nav-link {
   color: white;
 }
 
+.navbar button.btn.btn-danger:hover {
+  background-color: transparent;
+  color: #FA5959;
+  border: 2px solid #FA5959;
+}
+
+.container.fold button.btn-primary:hover {
+  background-color: transparent;
+  color: #5265E1;
+  border: 2px solid #252B46;
+}
+
+.container.fold button.btn-light:hover {
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #000000;
+}
+
+.custom-pills button.nav-link:hover  {
+  color: #FA5959;
+}
+
+.card a.btn-primary.custom:hover {
+  background-color: transparent;
+  color: #5265E1;
+  border: 2px solid #5265E1;
+}
+
+.prefooter form button.btn-secondary:hover {
+  background-color: white;
+  color: #FA5959 !important;
+  border: 2px solid #FA5959;
+}
+
 body:before {
   display: none;
 }
@@ -3722,7 +3756,7 @@ textarea.form-control-lg {
   --bs-nav-link-padding-y: 0.5rem;
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: #666;
-  --bs-nav-link-hover-color: #000000;
+  --bs-nav-link-hover-color: #FA5959;
   --bs-nav-link-disabled-color: #6c757d;
   display: flex;
   flex-wrap: wrap;
@@ -3842,7 +3876,7 @@ textarea.form-control-lg {
   --bs-navbar-padding-x: 0;
   --bs-navbar-padding-y: 0.5rem;
   --bs-navbar-color: rgba(0, 0, 0, 0.55);
-  --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
+  --bs-navbar-hover-color: #FA5959;
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
   --bs-navbar-brand-padding-y: 0.3125rem;
