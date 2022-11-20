@@ -157,6 +157,26 @@ footer a.nav-link {
   border: 2px solid #FA5959;
 }
 
+@media (min-width: 1000px) {
+  .custom-cards-position div.row {
+    position: relative;
+    height: 450px;
+  }
+  .custom-cards-position div.card:nth-child(1) {
+    position: absolute;
+    top: 0px;
+    left: 80px;
+  }
+  .custom-cards-position div.card:nth-child(2) {
+    position: absolute;
+    top: 50px;
+  }
+  .custom-cards-position div.card:nth-child(3) {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+  }
+}
 body:before {
   display: none;
 }
