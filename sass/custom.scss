@@ -1,0 +1,135 @@
+// IMPORT RUBIK FONT
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+
+
+// BASIC VARIABLES
+
+$new_purple:	#5265E1;
+$new_darkblue:	#252B46; 
+$new_violet:	#6610F2; 
+$new_gray: 		#9194A1; 
+$soft_red:		#FA5959;
+$black:    		#000000;
+
+$primary:       $new_purple;
+$secondary:     $soft_red;
+
+$font-size-base: 1rem;
+$h1-font-size:	$font-size-base * 3.1;
+$h6-font-size:	$font-size-base * 0.9;
+
+$box-shadow: 0 .25rem .5rem rgba($black, .15);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1140px
+);
+
+
+
+// NAV & FOLD
+
+body { font-family: 'Rubik', sans-serif; }
+
+button.navbar-toggler { border: none; }
+button.navbar-toggler:active,
+button.navbar-toggler:focus,
+button.navbar-toggler:focus-visible { box-shadow: none; }
+
+// Background solid color behind images
+.hero-img { position: relative; }
+.fold .hero-img img { width: 120%; }
+.hero-img img { width: 100%; }
+// .container.fold::after {
+// 	content: "";
+//     background-color: $primary;
+//     border-radius: 160px 0 0 160px;
+//     width: 40%;
+//     height: 350px;
+//     position: absolute;
+//     z-index: -1;
+//     right: 0px;
+//     top: 280px;
+// }
+
+@media (max-width: 992px) {
+
+	.navbar:has(.navbar-collapse.show) { background-color: rgba(0, 0, 80, 0.5); }
+	.navbar-brand { padding: 1rem; }
+	.navbar-toggler { margin-right: 4px; }
+	.navbar li.nav-item:nth-child(1) { margin: 2rem 1rem 0 1rem; }
+	.navbar li.nav-item { border-top: 1px solid white; margin: 0 1rem 0 1rem; }
+	.navbar li.nav-item a { font-size: 18px; color: white; }
+	.navbar li.nav-item:nth-child(3) { border-bottom: 1px solid white; margin: 0 1rem 1rem; }
+
+	.navbar li button {
+		width: 100%;
+		border: 2px solid white;
+		background-color: transparent;
+		box-shadow: none;
+	}
+	
+	.fold .hero-img img { width: 100%; }
+	.hero-img img { width: 100%; }
+	// .container.fold::after {
+	// 	content: "";
+	// 	background-color: $primary;
+	// 	border-radius: 160px 0 0 160px;
+	// 	width: 80%;
+	// 	height: 150px;
+	// 	position: absolute;
+	// 	z-index: -1;
+	// 	right: 0px;
+	// 	top: 220px;
+	// }
+
+}
+
+
+
+// MOCKUP GUIDES
+
+body:before { display: none; }
+
+body:before { 
+	content: "";
+	background-image: url("../assets/design/mobile-design.jpg");
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.35;
+	height: 4732px;
+}
+
+@media (min-width: 1000px) {
+	body:before { 
+		content: "";
+		background-image: url("../assets/design/desktop-design.jpg");
+		background-size: cover;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		opacity: 0.35;
+		height: 3616px;
+	}
+}
+
+// Check boxes
+// * { border: 1px solid red; }
+// * { background-color: rgba(255,0,0,0.1); }
+
+
+
+// IMPORT BOOTSTRAP STYLES
+
+@import "../node_modules/bootstrap/scss/bootstrap";
