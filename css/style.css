@@ -79,6 +79,50 @@ button.navbar-toggler:focus-visible {
   color: #FA5959;
 }
 
+.prefooter {
+  background-color: #5265E1;
+  color: white;
+}
+
+.input-container {
+  width: 100%;
+}
+
+.input-container .invalid-feedback,
+.input-container .valid-feedback {
+  background-color: #FA5959;
+  border-radius: 0 0 8px 8px;
+  padding: 4px 8px;
+  margin: 0 8px;
+  color: white;
+}
+
+.input-container .invalid-feedback {
+  background-color: #FA5959;
+}
+
+.input-container .valid-feedback {
+  background-color: green;
+}
+
+.prefooter button.submit {
+  height: 50px !important;
+}
+
+@media (max-width: 992px) {
+  .input-container .valid-feedback,
+  .input-container .invalid-feedback {
+    margin: 0;
+  }
+}
+footer.navbar {
+  background-color: #252B46;
+}
+
+footer a.nav-link {
+  color: white;
+}
+
 body:before {
   display: none;
 }
